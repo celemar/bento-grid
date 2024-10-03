@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full flex items-center justify-center font-[family-name:var(--font-dm-sans)] bg-[#f5f5f5] p-4">
-      <div className="bento-grid grid h-full lg:grid-cols-[minmax(0,250px)_repeat(2,minmax(0,260px))_minmax(0,250px)] lg:grid-rows-[minmax(0,320px)_minmax(0,70px)_minmax(0,140px)_minmax(0,80px)_minmax(0,150px)] gap-8 md:grid-cols-2">
+    <main className="min-h-screen w-full flex items-center justify-center font-[family-name:var(--font-dm-sans)] bg-[#f5f5f5] p-4 lg:pt-[84px] lg:pb-[64px]">
+      <div className="bento-grid grid h-full lg:grid-cols-[minmax(0,250px)_repeat(2,minmax(0,260px))_minmax(0,250px)] lg:grid-rows-[minmax(0,320px)_minmax(0,70px)_minmax(0,140px)_minmax(0,80px)_minmax(0,140px)] gap-8 md:grid-cols-2">
         <div className="box7 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#faeee2] p-5 md:pb-1 md:p-8 flex flex-col md:items-center ">
-          <p className="text-3xl md:text-[2rem] lg:text-4xl font-medium tracking-tight md:tracking-tighter pb-5 lg:pt-10 leading-none">
+          <p className="text-3xl md:text-[2rem] lg:text-4xl font-medium tracking-tight md:tracking-tighter pb-5 lg:pt-10">
             Create and schedule content{" "}
             <span className="italic  text-[#7651dc]">quicker.</span>
           </p>
