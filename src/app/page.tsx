@@ -46,7 +46,7 @@ export default function Home() {
             height={100}
             className="lg:absolute lg:left-[5rem] lg:bottom-[35%] lg:scale-[1.4] lg:scale-y-[1.35] mx-auto w-96"
           />
-          <p className="text-xl font-medium tracking-tighter leading-[1em] text-center lg:text-left ">
+          <p className="text-xl  tracking-tighter leading-[1em] text-center lg:text-left ">
             Optimize post timings to publish content at the perfect time for
             your audience.
           </p>
@@ -92,8 +92,8 @@ export default function Home() {
         </div>
 
         <div className="box6 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#fff] p-6 flex flex-col justify-between">
-          <p className="font-medium text-lg pb-4 md:pb-0">
-            <span className="text-5xl md:text-[4rem] block pb-2 lg:pb- tracking-tighter ">
+          <p className="text-lg pb-4 md:pb-0">
+            <span className="font-medium text-5xl md:text-[4rem] block pb-2 lg:pb- tracking-tighter ">
               &gt;56%
             </span>
             faster audience growth
