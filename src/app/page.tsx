@@ -2,100 +2,122 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen w-full flex items-center justify-center font-[family-name:var(--font-dm-sans)] bg-[#f5f5f5] p-4">
+      <div className="bento-grid grid h-full lg:grid-cols-[minmax(0,250px)_repeat(2,minmax(0,260px))_minmax(0,250px)] lg:grid-rows-[minmax(0,320px)_minmax(0,70px)_minmax(0,140px)_minmax(0,80px)_minmax(0,150px)] gap-8 md:grid-cols-2">
+        <div className="box7 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#faeee2] p-5 md:pb-1 md:p-8 flex flex-col md:items-center ">
+          <p className="text-3xl md:text-4xl font-medium tracking-tight md:tracking-tighter pb-5 lg:pt-10 leading-none">
+            Create and schedule content{" "}
+            <span className="italic  text-[#7651dc]">quicker.</span>
+          </p>
+          <Image
+            src="/assets/illustration-create-post.webp"
+            alt="Illustration of a button to create a new post"
+            width={230}
+            height={100}
+            className="max-w-48"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="box1 rounded-xl lg:col-span-2 lg:row-span-1 bg-[#7651dc] flex flex-col justify-center items-center py-10 px-6 md:p-4 gap-6">
+          <h1 className="font-medium text-5xl md:text-[3.5rem] text-white text-center leading-[2.5rem] md:leading-none tracking-tighter md:tracking-normal">
+            Social Media <span className="text-[#fdcb6a]">10x </span>
+            <span className="italic">Faster </span>
+            with AI
+          </h1>
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="/assets/illustration-five-stars.webp"
+              alt="Five stars representing customer satisfaction"
+              width={200}
+              height={100}
+              aria-hidden="true"
+            />
+            <p className="text-white text-lg">Over 4,000 5-star reviews</p>
+          </div>
+        </div>
+
+        <div className="box4 rounded-xl lg:col-span-1 lg:row-span-3 bg-[#dcd1fc] relative overflow-hidden flex flex-col justify-between py-8 md:py-12 px-4 md:px-6 gap-6 md:gap-4 lg:gap-0">
+          <h2 className="text-2xl md:text-3xl font-medium tracking-tight md:tracking-tighter text-center lg:text-left lg:leading-tight">
+            Schedule to social media.
+          </h2>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/assets/illustration-schedule-posts.webp"
+            alt="Illustration of a weekly schedule showing the best times to post"
+            width={250}
+            height={100}
+            className="lg:absolute lg:left-[5rem] lg:bottom-[35%] lg:scale-[1.4] lg:scale-y-[1.35] mx-auto w-96"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <p className="text-xl font-medium tracking-tighter leading-[1em] text-center lg:text-left ">
+            Optimize post timings to publish content at the perfect time for
+            your audience.
+          </p>
+        </div>
+
+        <div className="box8 rounded-xl lg:col-span-1 lg:row-span-3 lg:row-start-3 bg-[#ffcc69] flex flex-col justify-between p-5 md:p-6 gap-4">
+          <p className="text-3xl md:text-4xl font-medium tracking-tight md:tracking-tighter">
+            Write your content using AI.
+          </p>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/assets/illustration-ai-content.webp"
+            alt="Illustration representing AI content generation"
+            width={300}
+            height={100}
+            className="md:mx-auto max-w-52 lg:scale-[1.05] mb-3"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+
+        <div className="box2 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#fff] relative overflow-hidden p-4">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/assets/illustration-multiple-platforms.webp"
+            alt="Illustration of multiple social media platforms"
+            width={300}
+            height={100}
+            className="lg:absolute lg:left-[3.5rem] lg:top-8 lg:scale-125"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <p className="text-2xl md:text-[2rem] font-medium tracking-tight md:tracking-tighter leading-[.9em] lg:pt-[3.0em] lg:p-0 lg:pl-2 pt-5">
+            Manage multiple accounts and platforms.
+          </p>
+        </div>
+
+        <div className="box3 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#ffcc69] relative overflow-hidden flex flex-col px-6">
+          <p className="text-2xl md:text-[2rem] tracking-tight md:tracking-tighter leading-[.9em] font-medium  py-4 lg:pt-6">
+            Maintain a consistent posting schedule.
+          </p>
+          <Image
+            src="/assets/illustration-consistent-schedule.webp"
+            alt="Illustration of a weekly posting schedule"
+            width={210}
+            height={100}
+            className="lg:absolute lg:bottom-[-4.5em] lg:left-1/2 lg:-translate-x-1/2 md:mt-auto md:w-18 lg:w-54"
+          />
+        </div>
+
+        <div className="box6 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#fff] p-6 flex flex-col justify-between">
+          <p className="font-medium text-lg pb-4 md:pb-0">
+            <span className="text-5xl md:text-[4rem] block pb-2 lg:pb- tracking-tighter ">
+              &gt;56%
+            </span>
+            faster audience growth
+          </p>
+          <Image
+            src="/assets/illustration-audience-growth.webp"
+            alt="Avatars symbolizing audience growth"
+            width={180}
+            height={100}
+          />
+        </div>
+
+        <div className="box5 rounded-xl lg:col-span-2 lg:row-span-2 bg-[#7651dc] flex flex-col items-center lg:flex-row justify-center p-6 gap-10 md:gap-4">
+          <Image
+            src="/assets/illustration-grow-followers.webp"
+            alt="Graph showing follower growth"
+            width={220}
+            height={100}
+          />
+          <p className="font-medium text-3xl md:text-[2.4rem] text-white tracking-tighter leading-none px-6 md:px-0 text-center md:text-left">
+            Grow followers with non-stop content.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }

@@ -3,25 +3,77 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.bento-grid {
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8";
+}
+
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box7 {
+  grid-area: box7;
+}
+.box8 {
+  grid-area: box8;
+}
+
+.box8 > p,
+.box4 > h2 {
+  line-height: 0.9;
+}
+
+@media (min-width:1024px) and (max-width:1100px) {
+  .box2 > p {
+    padding-top: 3.5em;
+    font-size: 1.75rem;
+  }
+
+  .box3 > p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "box1 box4"
+      "box3 box6"
+      "box5 box8"
+      "box7 box2";
   }
 }
