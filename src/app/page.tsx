@@ -46,7 +46,7 @@ export default function Home() {
             height={100}
             className="lg:absolute lg:left-[5rem] lg:bottom-[35%] lg:scale-[1.4] lg:scale-y-[1.35] mx-auto w-96"
           />
-          <p className="text-xl  tracking-tighter leading-[1em] text-center lg:text-left ">
+          <p className="text-xl tracking-tighter leading-[1em] text-center lg:text-left ">
             Optimize post timings to publish content at the perfect time for
             your audience.
           </p>
