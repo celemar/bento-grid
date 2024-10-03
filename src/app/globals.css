@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --purple-100: hsl(254, 88%, 90%);
   --purple-500: hsl(256, 67%, 59%);
   --yellow-100: hsl(31, 66%, 93%);
@@ -10,7 +10,8 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 7%);
 }
-
+ */
+ 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
