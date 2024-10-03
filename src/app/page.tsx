@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen w-full flex items-center justify-center font-[family-name:var(--font-dm-sans)] bg-[#f5f5f5] p-4">
       <div className="bento-grid grid h-full lg:grid-cols-[minmax(0,250px)_repeat(2,minmax(0,260px))_minmax(0,250px)] lg:grid-rows-[minmax(0,320px)_minmax(0,70px)_minmax(0,140px)_minmax(0,80px)_minmax(0,150px)] gap-8 md:grid-cols-2">
         <div className="box7 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#faeee2] p-5 md:pb-1 md:p-8 flex flex-col md:items-center ">
-          <p className="text-3xl md:text-4xl font-medium tracking-tight md:tracking-tighter pb-5 lg:pt-10 leading-none">
+          <p className="text-3xl md:text-[2rem] lg:text-4xl font-medium tracking-tight md:tracking-tighter pb-5 lg:pt-10 leading-none">
             Create and schedule content{" "}
             <span className="italic  text-[#7651dc]">quicker.</span>
           </p>
@@ -65,7 +65,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="box2 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#fff] relative overflow-hidden p-4">
+        <div className="box2 rounded-xl lg:col-span-1 lg:row-span-2 bg-[#fff] relative overflow-hidden p-4 ">
           <Image
             src="/assets/illustration-multiple-platforms.webp"
             alt="Illustration of multiple social media platforms"
@@ -73,7 +73,7 @@ export default function Home() {
             height={100}
             className="lg:absolute lg:left-[3.5rem] lg:top-8 lg:scale-125"
           />
-          <p className="text-2xl md:text-[2rem] font-medium tracking-tight md:tracking-tighter leading-[.9em] lg:pt-[3.0em] lg:p-0 lg:pl-2 pt-5">
+          <p className="text-2xl md:text-[2rem] font-medium tracking-tight md:tracking-tighter leading-[.9em] pt-5 md:pt-8 lg:pt-[3.0em] lg:p-0 lg:pl-2">
             Manage multiple accounts and platforms.
           </p>
         </div>
